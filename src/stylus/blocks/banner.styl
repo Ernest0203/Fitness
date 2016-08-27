@@ -1,0 +1,62 @@
+.banner {
+    color black
+    text-align center
+    
+    padding-top 230px
+    
+    background url('../images/footer.jpg') no-repeat
+    background-size cover
+    background-position center
+    
+    height 800px
+    position relative
+    
+    overflow hidden
+    
+    @media (max-width: 500px) {
+        padding-top 100px
+    }
+    
+    h2 {
+        margin-bottom 35px
+        font-size 45px
+        color white
+    }
+    
+    p {
+        color white
+        width 50%
+        margin 0 auto
+        
+        @media (max-width: 790px) {
+            width 90%
+        }
+    }
+    
+    &:after, &:before {
+        content ''
+        display block
+        background-color #0d1119
+        
+        height 120px
+        width 2000px
+        
+        position absolute
+        bottom -40px
+        z-index 0
+        
+        @media (max-width: 500px) {
+            bottom -50px
+        }
+    }
+    
+    &:after {
+        left -50px
+        transform rotate(3deg)
+    }
+    &:before {
+        right -50px
+        transform rotate(-4deg)
+    }
+}
+

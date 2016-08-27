@@ -1,0 +1,76 @@
+.menu-off-canvas-wrapper {
+    
+    @media(min-width: 768px) {
+        display none
+    }
+    
+}
+
+.menu-off-canvas {
+    position fixed
+    top 0
+    left 0
+    
+    z-index 10
+    
+    height 100vh
+                
+    transition .3s
+    
+    &--inactive {
+        transform translateX(-100%)
+    }
+}
+
+.nav {
+    padding 25px
+    margin 0
+    width 170px
+    height 100vh
+    
+    background-color #606c79
+    
+    &__item {
+        margin-bottom 15px
+        
+        a {
+            color aliceblue
+            text-transform uppercase
+            
+            &:hover {
+                color #0d9d9d
+            }
+        }
+    }
+}
+
+.overlay {
+    
+    width 100vw
+    height 100vh
+    
+    background-color rgba(0,0,0,0)
+    
+    transition .5s
+        
+    position absolute
+    top 0
+    right 0
+        
+    &--active {
+        background-color rgba(0,0,0,.6)
+    }
+}
+
+.menu-icon {
+    z-index 6
+        
+}
+
+a.menu-icon.fixed-menu {
+    position fixed
+    top 25px
+    left 15px
+        
+}
+

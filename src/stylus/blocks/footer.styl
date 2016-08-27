@@ -1,0 +1,140 @@
+.footer {
+    padding 40px 20px
+    
+    background-color #0d1119
+    position relative
+    
+    .resources, .about-us {
+        h5 {
+            font-size 15px
+            color white
+            
+            margin-bottom 25px
+        }
+        p {
+            font-size 14px
+            color #8297a7
+        }
+    }
+    
+    .social {
+        
+        @media (max-width:1020px) {
+            margin 0 auto
+            text-align center
+        }
+        
+        h5 {
+            font-size 15px
+            color white
+            
+            margin-bottom 25px
+        }
+        
+        a {
+            display inline-block
+            width 51px
+            height 51px
+            
+            margin-right 15px
+            
+            border-radius 50%
+            position relative
+            
+            transition .3s
+            
+            &:hover {
+                transform scale(1.3)
+                
+            }
+            
+            &:after {
+                content ''
+                display block
+                
+                width 9px
+                height 19px
+                
+                background url('../images/icons/social-icons-sprite.png')
+                background-position 100% 0                    
+                
+                position absolute
+                top 35%
+                left 40%
+            }
+            
+            &:nth-of-type(1) {
+                background-color #2e3192
+                
+                &:after {
+                   
+                    width 9px
+                    height 19px
+                    
+                    background url('../images/icons/social-icons-sprite.png')
+                    background-position 100% 0   
+                }
+            }
+            &:nth-of-type(2) {
+                background-color #00aeef
+                
+                &:after {
+                   
+                    width 19px
+                    height 16px
+                    
+                    background url('../images/icons/social-icons-sprite.png')
+                    background-position 60% 100% 
+                    
+                    top 40%
+                }
+            }
+            &:nth-of-type(3) {
+                background-color #ed3123
+                
+                &:after {
+                   
+                    width 17px
+                    height 18px
+                    
+                    background url('../images/icons/social-icons-sprite.png')
+                    background-position 70% 0 
+                    
+                    top 40%
+                }
+            }
+            &:nth-of-type(4) {
+                background-color #b92317
+                margin-right 0
+                &:after {
+                   
+                    width 17px
+                    height 18px
+                    
+                    background url('../images/icons/social-icons-sprite.png')
+                    background-position 0 0 
+                    
+                    top 30%
+                }
+            }
+            
+        }
+    }
+    
+    .newsletter {
+        margin-top 25px
+    }
+    
+    form {
+        
+        input {
+            margin-right 5px
+            border-radius 3px
+        }
+        button {
+            padding 10px
+            background-color #a2ca28
+        }
+                
+    }
+}

@@ -1,0 +1,96 @@
+.header {
+    background url('../images/hero.jpg') no-repeat
+    background-size cover
+    
+    height 101vh
+        
+    padding 35px 60px
+    position relative
+    overflow-x hidden
+    
+    @media (max-width: 769px) {
+        padding 35px 30px
+        background-position center
+    }
+    
+    &:after {
+        content ''
+        display block
+        
+        position absolute
+        bottom 0
+        left -40%
+        opacity 0.3
+        
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 0 173px 200rem;
+        border-color: transparent transparent #fd634e transparent;
+    }
+        
+    .menu {
+        transition .1s
+    }
+    .fixed {
+        background-color rgba(253, 99, 78, .9)
+        padding 20px 60px
+        
+        position fixed
+        top 0
+        left 0
+        z-index 10
+        
+        transition .4s
+        
+        @media(max-width: 767px) {
+            display none
+        }
+        
+    }
+    
+    &__logo {
+        @media(max-width: 767px) {
+            position absolute
+            top 25px
+            right 25px
+            text-align right
+        }
+    }
+    
+    &__menu {
+                        
+        li {
+            a {
+                color white
+                text-transform uppercase
+                border-bottom 2px solid transparent
+                
+                &:hover {
+                    color #a2ca28
+                    border-bottom 2px solid #a2ca28
+                }
+            }
+        }
+        
+        @media(max-width: 767px) {
+            display none
+        }
+    }
+    
+    &__slogan {
+        position absolute
+        bottom 145px
+        left 7%
+        
+        text-transform uppercase
+        
+        h2 {
+            color white
+        }
+        p {
+            text-align right
+            padding-right 30px
+        }
+    }
+}

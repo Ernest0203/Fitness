@@ -1,0 +1,70 @@
+.features {
+    
+    padding-top 100px
+    background-color #a2ca28
+        
+    &__list {
+        margin-bottom 100px
+    }
+    
+    &__item {
+        margin-bottom  40px
+                
+        img {
+            height 40px
+        }    
+        h4 {
+            font-size 24px
+            font-weight 400
+            color white
+            
+            margin 20px 0 30px
+        }
+        p {
+            font-size 14px
+            margin-bottom 30px
+        }
+        a {
+            font-size 14px
+            color white
+        }
+    }
+    
+    .fitness-first, .love-body {
+        .desc {
+            text-align center
+            padding 50px
+            background-color white
+            
+            h6 {
+                font-size 14px
+            }
+            h3 {
+                margin 10px 0 50px
+                
+            }
+            p {
+                font-size 14px
+                color #656e74
+                margin-bottom 10px
+            }
+            a {
+                font-size 14px
+                color #a2ca28
+                text-decoration underline
+            }
+        }
+        
+    }
+    
+    .love-body {
+        .desc {
+            order 1
+            
+            @media(max-width: 1018px) {
+                order 0
+                
+            }
+        }
+    }
+}

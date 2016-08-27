@@ -1,0 +1,50 @@
+font-light = 'OpenSans-Light'
+font-regular = 'OpenSans-Regular'
+
+features-color = #8297a7
+
+tablet = 40em
+screen = 64em
+screen_large = 90em
+
+
+.center-wrapper {
+    max-width 1184px
+    margin 0 auto
+    
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family font-light
+}
+h3 {
+    color #a2ca28
+    font-size 35px
+    text-transform uppercase
+    
+    @media (max-width: 500px) {
+        font-size 25px
+    }
+}
+h6 {
+    color #fd634e
+    text-transform uppercase
+}
+
+body {
+    font-family font-regular
+    color white
+}
+
+a {
+    text-decoration none
+    transition .3s
+}
+
+li {
+    list-style none
+}
+
+.row {
+    max-width 100%
+}
